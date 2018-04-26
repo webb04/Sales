@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>Sale</title>
+        <meta name="description" content="Sale">
+        <meta name="author" content="Jamie">
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <header class="mainHeader">
+            <ul>
+                <li><a href="index.html">EXAMPLE 1</a></li>
+                <li><a href="fade.html">EXAMPLE 2</a></li>
+                <li class="active">TRANSLATIONS</li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="banner-copy international">
+                <h1 class="title"><span id="title">Sale</span></h1>
+                <h2 class="subtitle"><span id="mainSubtitle">Get lucky</span> | <span id="subtitle">1000 items at up to 60% off</span></h2>
+            </div>
+            <picture>
+                <img class="banner" srcset="../images/jpgs/sale-banner-lg.jpg" alt="Sample pic" />
+            </picture>
+        </div>
+        <div class="flag-container">
+            <!-- Can use data-code to lazy load flags -->
+            <img class="flag" data-code='gb' src="../images/flags/gb.svg"/>
+            <img class="flag" data-code='cn' src="../images/flags/cn.svg"/>
+            <img class="flag" data-code='de' src="../images/flags/de.svg"/>
+            <img class="flag" data-code='es' src="../images/flags/es.svg"/>
+            <img class="flag" data-code='fr' src="../images/flags/fr.svg"/>
+            <img class="flag" data-code='it' src="../images/flags/it.svg"/>
+            <img class="flag" data-code='jp' src="../images/flags/jp.svg"/>
+            <img class="flag" data-code='kr' src="../images/flags/kr.svg"/>
+            <img class="flag" data-code='mx' src="../images/flags/mx.svg"/>
+            <img class="flag" data-code='ru' src="../images/flags/ru.svg"/>
+        </div>
+        <script src="../build/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+.mainHeader {
+    top: 0;
+    left: 0;
+    height: 70px;
+    box-shadow: 1px 0 1px rgba(34,34,34,.2);
+    width: 100%;
+    background: #fff;
+    padding: 0 35px;
+    font-family: header;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 70px;
+}
+
+li {
+    display: inline-block;
+    margin: 0px 30px 0px 0px;
+    letter-spacing: .2em;
+    font-size: 16px;
+    color: #aaa;
+}
+
+li.active {
+    color: black;
+}
+
+@font-face {
+    font-family: polaris;
+    src: url('../fonts/polaris.ttf');
+}
+
+@font-face {
+    font-family: header;
+    src: url('../fonts/header.ttf');
+}
+
+body {
+    font-family: polaris, -apple-system, BlinkMacSystemFont, Helvetica, Arial;
+    margin: 0;
+}
+
+.container {
+    margin: 0 30px;
+    position: relative;
+    overflow: hidden;
+    background: #cdcdcd;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.example1 {
+    animation-duration: .8s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 60px;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+}
+
+.banner-copy {
+    position: absolute;
+    padding: 20px;
+    bottom: 0px;
+    margin-left: 60px;
+    animation: .2s slidein .8s;
+    animation-fill-mode: forwards;
+}
+
+.title {
+    opacity: 0;
+    animation: .2s uncover .8s;
+    animation-fill-mode: forwards;
+    margin: 0;
+    font-size: 4em;
+    color: #d02625;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+
+.subtitle {
+    opacity: 0;
+    animation: .2s uncover .8s;
+    animation-fill-mode: forwards;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: .2em;
+    text-shadow: 1px 1px #5b5b5c;
+}
+
+.international .title, .international .subtitle {
+    letter-spacing: inherit;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes uncover {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .subtitle {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .subtitle {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 920px) {
+    .subtitle {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .title {
+        display: none;
+    }
+}
+
+.mainHeader a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainHeader a:hover {
+    color: black;
+    transition: color .2s ease;
+}
+
+.f1, .f2, .f3 {
+    width: calc(100% - 60px);
+    display: block;
+    padding: 0 30px;
+    position: absolute;
+}
+
+.fadein img {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+.fadein .f1 {
+    -webkit-animation-name: fade1;
+    animation-name: fade1;
+}
+
+.fadein .f2 {
+    -webkit-animation-name: fade2;
+    animation-name: fade2;
+}
+
+.fadein .f3 {
+    -webkit-animation-name: fade3;
+    animation-name: fade3;
+}
+
+@keyframes fade1 {
+    0% {opacity: 1;}
+    30% {opacity: 1;}
+    33% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade2 {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    33% {opacity: 1;}
+    63% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade3 {
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    63% {opacity: 1;}
+    97% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.flag-container {
+    margin: 70px 30px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.flag {
+    width: 32px;
+    height: 24px;
+    margin: 0 10px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.1);
+}
+
+.flag:hover {
+    box-shadow: 0 6px 36px rgba(0,0,0,.25);
+    cursor: pointer;
+}
