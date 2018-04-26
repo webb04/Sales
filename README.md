@@ -3,8 +3,10 @@
 - npm run build
 - Open ./html/index.html in browser
 
+
 # Testing:
 - npm run test
+
 
 # ToDo:
 - ESLint
@@ -24,6 +26,7 @@
 - PostCSS / Autoprefixer to avoid adding prefixes in css files
 - Russian characters aren't supported by the font. Would look into a font with full support
 
+
 # First part
 - Subtle movement animation to bring attention to the important sale code. Using TranslateX() would be more performant than animating margin. 
 - Fading images allows for more content to be shown, and isn't too distracting for users.
@@ -32,6 +35,7 @@
     - more declarative/less code than JavaScript animations
     - more performant
     - graceful degradation e.g. no animation rather than a JavaScript error in older browsers
+
 
 # Second part
 - Dynamic translation in JavaScript (avoids requiring further network requests)
