@@ -11,7 +11,7 @@
 # ToDo:
 - ESLint
 - Performance:
-    - Next gen image formats (webp, jpeg2000, jpegXR)
+    - Next-gen image formats (webp, jpeg2000, jpegXR)
     - Use `<picture>` polyfill (picturefill)
     - srcset to serve correctly sized images
     - IntersectionObserver / lazy load images when needed
@@ -22,7 +22,7 @@
 - BEM (block element modifier)
 - CSS preprocessor (SASS)
 - Mobile responsive (Putting the navigation links behind a hamburger icon)
-- Templating (avoid duplicationg html e.g. header)
+- Templating (avoid duplicating html e.g. header)
 - PostCSS / Autoprefixer to avoid adding prefixes in css files
 - Russian characters aren't supported by the font. Would look into a font with full support
 
